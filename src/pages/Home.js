@@ -785,7 +785,7 @@ const Home = () => {
           </div>
 
           {/* Filtered Dishes Section */}
-          <div className="flex flex-wrap justify-center gap-7">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-7">
             {dishes
               .filter((dish) => dish.category === filter)
               .map((dish) => (
