@@ -600,13 +600,13 @@ import Food from "../components/Food";
 import Ice from "../images/i1.png";
 import Strawbery from "../images/f1.png";
 import Kabab from "../images/c3.png";
-import Fish from "../images/f1.png";
+import Fish from "../images/fi1.png";
 import Item from "../components/Item";
-import I1 from "../images/i1.png";
-import I2 from "../images/i2.png";
-import I3 from "../images/i3.png";
-import I4 from "../images/i4.png";
-import I5 from "../images/i5.png";
+import F1 from "../images/f8.png";
+import F2 from "../images/f2.png";
+import F3 from "../images/f3.png";
+import F4 from "../images/f4.png";
+import F5 from "../images/f5.png";
 import { IoFastFood } from "react-icons/io5";
 import { categories, dishes } from "../utils/data";
 import Modal from "../components/Modal"; // Import the Modal component
@@ -709,31 +709,31 @@ const Home = () => {
 
         <div className="flex mt-10 justify-between flex-wrap">
           <Item
-            image={I1}
+            image={F1}
             heading="Pure Vanilla ice cream"
             price={4.50}
             description="Awesome creams with"
           />
           <Item
-            image={I2}
+            image={F2}
             heading="Pure Vanilla ice cream"
             price={3.75}
             description="Awesome creams with"
           />
           <Item
-            image={I3}
+            image={F3}
             heading="Pure Vanilla ice cream"
             price={0.75}
             description="Awesome creams with"
           />
           <Item
-            image={I4}
+            image={F4}
             heading="Pure Vanilla ice cream"
             price={1}
             description="Awesome creams with"
           />
           <Item
-            image={I5}
+            image={F5}
             heading="Pure Vanilla ice cream"
             price={100}
             description="Awesome creams with"

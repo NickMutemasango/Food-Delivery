@@ -106,7 +106,7 @@ const Item = (props) => {
   
 
   return (
-    <div className="bg-green-400 rounded-3xl w-[48%] md:w-[30%] lg:w-[28%] xl:w-[18%] flex flex-col px-2 pb-1 mb-16">
+    <div className="bg-[#F5D6C6] rounded-3xl w-[48%] md:w-[30%] lg:w-[28%] xl:w-[18%] flex flex-col px-2 pb-1 mb-16">
       <div className="flex justify-between items-center">
         <img src={props.image} alt="" className="w-24 h-32" />
         <motion.div

@@ -21,6 +21,26 @@ const CartContainer = () => {
       payload: { itemId, action: "increment" },
     });
   };
+
+  const handleCheckout = async () => {
+    try {
+      const response = await fetch('http://localhost:4000/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ cartItems: state.cartItems }),
+      });
+  
+      const data = await response.json();
+      if (data.url) {
+        window.location.href = data.url; // Redirect to Stripe Checkout
+      }
+    } catch (error) {
+      console.error('Error during checkout:', error);
+    }
+  };
+  
   
   const decrement = (itemId) => {
     dispatch({
@@ -45,6 +65,8 @@ const CartContainer = () => {
 
  
   const deliveryCost = 2.5;
+ 
+
 
  
   const total = subtotal + deliveryCost;
@@ -131,6 +153,7 @@ const CartContainer = () => {
             <motion.button
               type="button"
               whileTap={{ scale: 0.8 }}
+              onClick={handleCheckout}
               className="w-full p-2 rounded-full bg-orange text-gray-50 text-lg my-2 hover:shadow-lg transition-all duration-150 ease-out"
             >
               Check Out

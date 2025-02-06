@@ -432,9 +432,9 @@ const Navbar = () => {
       {/* Menu Links */}
       <div className="space-x-10 text-[#4D4D4D] pr-9 md:items-center hidden md:flex">
         <Link to="/Home" onClick={toggleMenu}>Home</Link>
-        <Link to="/Menu" onClick={toggleMenu}>Menu</Link>
-        <Link to="/About" onClick={toggleMenu}>About</Link>
-        <Link to="/Services" onClick={toggleMenu}>Services</Link>
+        <Link to="#" onClick={toggleMenu}>Menu</Link>
+        <Link to="#" onClick={toggleMenu}>About</Link>
+        <Link to="#" onClick={toggleMenu}>Services</Link>
         <div className="relative">
           <FontAwesomeIcon
             icon={faCartShopping}
